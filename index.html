@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Profil Keluarga Harmonis</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="preloader">
+        <i class="fa-solid fa-heart loader-heart"></i>
+        <h2 class="preloader-text">Membuka Gerbang Kebahagiaan...</h2>
+    </div>
+
+    <canvas id="particle-canvas"></canvas>
+
+    <div class="live-info-widget">
+        <div id="greeting-text"><i class="fa-solid fa-sun"></i> Selamat Hari</div>
+        <div id="digital-clock"><i class="fa-solid fa-clock"></i> 00:00:00</div>
+    </div>
+
+    <div class="utility-bar">
+        <button class="util-btn" id="theme-toggle" title="Ubah Tema"><i class="fa-solid fa-moon"></i></button>
+        <button class="util-btn" id="music-toggle" title="Putar Musik"><i class="fa-solid fa-music"></i></button>
+        <button class="util-btn" id="scroll-to-top" title="Kembali ke Atas"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+
+    <audio id="bg-audio" loop src="rumah hindia.mp3"></audio>
+
+    <section id="hero">
+        <div class="hero-slideshow">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=1470')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=1470')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?q=80&w=1374')"></div>
+        </div>
+        <div class="hero-content" data-aos="zoom-in">
+            <h1>Keluarga Abah Toni</h1>
+            <p>Bukan tentang seberapa besar rumahnya, melainkan tentang seberapa banyak cinta yang tumbuh di dalamnya. Lembaran demi lembaran cerita hangat kami kumpulkan di sini, ruang kecil tempat kami saling bertumpu dan mencintai tanpa batas.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="stats-container" data-aos="fade-up">
+            <div class="stat-card">
+                <i class="fa-solid fa-users"></i>
+                <span class="stat-number">4</span>
+                <span>Anggota Keluarga</span>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-children"></i>
+                <span class="stat-number">2</span>
+                <span>Jumlah Anak</span>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-mars"></i>
+                <span class="stat-number">1</span>
+                <span>Anak Laki-Laki</span>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-venus"></i>
+                <span class="stat-number">1</span>
+                <span>Anak Perempuan</span>
+            </div>
+        </div>
+
+        <h2 class="section-title" data-aos="fade-up">Tentang Keluarga Kami</h2>
+        <p class="about-intro" data-aos="fade-up">Kami adalah perpaduan sederhana antara ketegasan, kelembutan, keceriaan, dan impian besar. Berjalan beriringan melewati waktu, menempa kenangan yang takkan lekang oleh zaman.</p>
+
+        <div class="profile-grid">
+            <div class="flip-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="profile-img-wrapper">
+                            <img src="foto abah.jpeg" alt="Abah">
+                        </div>
+                        <div class="profile-info-front">
+                            <h3>Abah</h3>
+                            <div class="profile-role">Ayah & Nakhoda</div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Abah</h3>
+                        <div class="profile-role role-back">Pelindung Keluarga</div>
+                        <p>Tiang kokoh pelindung kami semua. Sosok penyabar yang mengajarkan arti kerja keras, kejujuran, dan bagaimana memimpin dengan ketegasan hati yang penuh kasih.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="profile-img-wrapper">
+                            <img src="foto mama.jpeg" alt="Mama">
+                        </div>
+                        <div class="profile-info-front">
+                            <h3>Mama</h3>
+                            <div class="profile-role">Ibu & Jantung Rumah</div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Mama</h3>
+                        <div class="profile-role role-back">Sumber Kehangatan</div>
+                        <p>Sentuhan kehangatan yang meredam segala gundah. Doa-doanya adalah tirai pelindung terbaik, dan masakannya adalah alasan mutlak untuk kami selalu rindu pulang ke rumah.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="profile-img-wrapper">
+                            <img src="foto mas.jpeg" alt="Mas">
+                        </div>
+                        <div class="profile-info-front">
+                            <h3>Mas Arul</h3>
+                            <div class="profile-role">Anak Pertama (Laki-laki)</div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Mas</h3>
+                        <div class="profile-role role-back">Kakak & Teladan</div>
+                        <p>Anak sulung yang bisa diandalkan. Menjadi jembatan pelindung bagi adiknya dan partner diskusi andal bagi Abah dan Mama dalam merancang masa depan keluarga.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="profile-img-wrapper">
+                            <img src="foto risma.jpeg" alt="Aku">
+                        </div>
+                        <div class="profile-info-front">
+                            <h3>Risma</h3>
+                            <div class="profile-role">Anak Kedua (Perempuan)</div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Aku Risma</h3>
+                        <div class="profile-role role-back">Bungsu & Penceria</div>
+                        <p>Anak kedua sekaligus penutup formasi indah ini. Pembawa tawa di saat sepi, pengamat yang penuh rasa ingin tahu, dan pengagum rahasia kebersamaan kami.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="family-tree">
+        <h2 class="section-title" data-aos="fade-up">Pohon Keluarga</h2>
+        <div class="tree-container" data-aos="zoom-in">
+            <div class="tree-level">
+                <div class="tree-node">Abah Toni <span>Ayah yang hebat</span></div>
+                <div class="tree-node">Mama Ranipah <span>Ibu yang baik</span></div>
+            </div>
+            <div class="tree-connector-v"></div>
+            <div class="tree-level">
+                <div class="tree-node">Mas Arul <span>Anak Pertama</span></div>
+                <div class="tree-node">Risma <span>Anak Kedua</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2 class="section-title" data-aos="fade-up">Galeri Kenangan</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                <img src="foto keluarga 1.jpeg" alt="wisuda risma">
+                <div class="gallery-overlay"><h3>Momen di acara wisuda risma</h3></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                <img src="abah dan mama.jpeg" alt="mama dan abah">
+                <div class="gallery-overlay"><h3>makan bakso bareng</h3></div>
+            </div>
+
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+                <img src="risma dan mas kecil.jpeg" alt="Foto masa kecil">
+                <div class="gallery-overlay"><h3>menggemaskan</h3></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+                <img src="risma dan mas.jpeg" alt="risma dan mas arul">
+                <div class="gallery-overlay"><h3>jalan-jalan ke AAT</h3></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="500">
+                <img src="risma dan mama.jpeg" alt="Foto beli es buah">
+                <div class="gallery-overlay"><h3>Sore Santai</h3></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="600">
+                <img src="risma mas wisuda 1.jpeg" alt="wisuda sekolah">
+                <div class="gallery-overlay"><h3>foto sama mas</h3></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="timeline">
+        <h2 class="section-title" data-aos="fade-up">Perjalanan Keluarga</h2>
+        <div class="timeline-container">
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-content">
+                    <h3>Awal Mula Cerita</h3>
+                    <p>Pernikahan Abah dan Mama menjadi pondasi utama tempat cinta ini mulai dibangun.</p>
+                </div>
+            </div>
+            <div class="timeline-item right" data-aos="fade-left">
+                <div class="timeline-content">
+                    <h3>Kehadiran Mas Arul</h3>
+                    <p>Tangisan pertama anak laki-laki pertama meramaikan seisi rumah dan melipatgandakan kebahagiaan.</p>
+                </div>
+            </div>
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-content">
+                    <h3>Pelengkap Kebahagiaan (Aku)</h3>
+                    <p>Lahirnya anak kedua, seorang anak perempuan, menyempurnakan formasi kebersamaan keluarga kami.</p>
+                </div>
+            </div>
+            <div class="timeline-item right" data-aos="fade-left">
+                <div class="timeline-content">
+                    <h3>Melangkah Bersama</h3>
+                    <p>Dari rumah kecil penuh tawa hingga pencapaian demi pencapaian hari ini yang kami syukuri bersama.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="memories">
+        <h2 class="section-title" data-aos="fade-up">Kenangan Indah</h2>
+        <div class="interactive-box" data-aos="zoom-in">
+            <p class="memories-intro">Setiap sudut rumah ini merekam tawa, perbincangan malam yang mendalam, hingga pelukan hangat pasca badai kehidupan datang menempa. Kami percaya bahwa momen terbaik bukan dinilai dari kemewahannya, melainkan dengan siapa kita membaginya.</p>
+            <button class="btn-custom" id="secret-btn">Buka Pesan Rahasia Keluarga</button>
+            <div class="secret-message-box" id="secret-box">
+                <div class="secret-text-wrapper">
+                    "Teruntuk kita semua yang berada di dalam lingkaran hangat ini: Terima kasih telah berjuang, saling memaafkan, dan tidak pernah melepaskan genggaman. Jaga erat rumah ini di dalam hati kalian, ke mana pun kaki melangkah pergi."
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="countdown-area">
+        <div class="interactive-box" data-aos="fade-up">
+            <h3>Menuju Hari Raya Idul Fitri</h3>
+            <p class="text-muted text-small">Momen kesucian, kemenangan, dan berkumpulnya seluruh kehangatan keluarga</p>
+            <div class="countdown-grid" id="countdown-timer">
+                <div class="countdown-segment"><span id="days">00</span>Hari</div>
+                <div class="countdown-segment"><span id="hours">00</span>Jam</div>
+                <div class="countdown-segment"><span id="minutes">00</span>Menit</div>
+                <div class="countdown-segment"><span id="seconds">00</span>Detik</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="quote-section" data-aos="fade-up">
+            <i class="fa-solid fa-quote-left"></i>
+            <div class="quote-text">"Keluarga adalah satu-satunya tempat di dunia di mana cinta tidak pernah dihitung menggunakan angka, dan kesalahan selalu menemukan jalan pulang untuk dimaafkan."</div>
+            <span class="quote-author">- Catatan Kecil Kami</span>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-text">"Keluarga adalah tempat pertama untuk pulang, belajar, dan dicintai tanpa syarat ❤️"</p>
+        <p class="footer-copy">&copy; 2026 Profil Keluarga Harmonis. Dibuat dengan penuh ketulusan.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
