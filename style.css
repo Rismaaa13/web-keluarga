@@ -628,7 +628,19 @@ footer {
     .right { left: 0; }
     .tree-level { flex-direction: column; align-items: center; gap: 15px; }
     .tree-connector-v { height: 20px; }
-    .hero-content h1 { font-size: 2.5rem; }
+    .hero-content h1 { font-size: 2.2rem; }
+    /* TAMBAHKAN INI: Supaya teks deskripsi di bawah judul ukurannya pas di HP */
+    .hero-content p { 
+        font-size: 1rem !important; 
+        line-height: 1.6;
+    }
+    
+    /* TAMBAHKAN INI: Supaya kotak pembungkus teks di HP tidak terlalu lebar ke pinggir */
+    .hero-content {
+        width: 90% !important;
+        padding: 20px !important;
+    }
+    
     .section-title { font-size: 2.2rem; }
     .live-info-widget { display: none; } /* Menghemat ruang di perangkat seluler */
 }
